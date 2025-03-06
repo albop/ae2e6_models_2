@@ -12,7 +12,7 @@ dependencies:
   - ipyvuetify
   - markdown
   - pymdown-extensions
-  - solara-nodeps
+  - solara-ui
   - dyno
   - dolang
   - scipy
