@@ -5,7 +5,7 @@ channels:
 dependencies:
   - xeus-python
   - mock
-  - pandas <2
+  - pandas
   - numpy
   - bqplot
   - reacton
