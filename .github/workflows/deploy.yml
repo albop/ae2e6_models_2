@@ -29,8 +29,6 @@ jobs:
       - name: Download Custom version of Solara
         run: |
           mkdir -p repo/noarch
-          wget https://github.com/albop/dyno.py/raw/artefacts/packages/noarch/solara-assets-nodeps-1.25.0-py_0.tar.bz2 -P repo/noarch
-          wget https://github.com/albop/dyno.py/raw/artefacts/packages/noarch/solara-nodeps-1.25.0-py_0.tar.bz2 -P repo/noarch
           wget https://github.com/albop/dyno.py/raw/artefacts/packages/noarch/dyno-0.1.4-py_0.tar.bz2 -P repo/noarch
           wget https://github.com/albop/dyno.py/raw/artefacts/packages/noarch/dolang-0.0.20-py_2.tar.bz2 -P repo/noarch
  
@@ -39,7 +37,7 @@ jobs:
         run: sh build_dist.sh
 
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v1
+        uses: actions/upload-pages-artifact@v4
         with:
           path: ./dist
 
